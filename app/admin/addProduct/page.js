@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React, {useState} from 'react'
 import {toast} from 'react-toastify'
 
-const page = () => {
+const Page = () => {
 	const [image, setImage] = useState(false)
 	const [data, setData] = useState({
 		title: '',
@@ -57,6 +57,7 @@ const page = () => {
 						className='mt-4'
 						src={!image ? assets.upload_area : URL.createObjectURL(image)}
 						width={140}
+						alt=''
 						height={70}
 					/>
 				</label>
@@ -109,4 +110,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page

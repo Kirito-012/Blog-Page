@@ -3,7 +3,7 @@ import BlogTableItem from '@/app/components/adminComponents/BlogTableItem'
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 
-const page = () => {
+const Page = () => {
 	const [blogs, setBlogs] = useState([])
 
 	const fetchBlogs = async () => {
@@ -75,4 +75,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page
